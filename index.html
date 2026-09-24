@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Premium Birthday Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- External CSS File -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+<div id="loader">
+    <h1>🎂 Loading Surprise...</h1>
+</div>
+    <div class="balloon balloon1"></div>
+<div class="balloon balloon2"></div>
+<div class="balloon balloon3"></div>
+<div class="balloon balloon4"></div>
+<div class="heart">❤️</div>
+<div class="heart h2">💖</div>
+<div class="heart h3">💕</div>
+    <!-- Hero Section Starts -->
+
+<section class="hero" id="hero">
+
+    <h1>Happy Birthday 🎂</h1>
+
+    <p class="subtitle">
+        ✨ Celebrate Every Moment ✨
+    </p>
+
+    <p id="typing"></p>
+
+    <p>
+        Wishing you happiness, success and countless beautiful memories.
+    </p>
+
+    <div id="giftBox" onclick="showSurprise()">
+        🎁
+    </div>
+
+    <p>Click the Gift to Open Your Surprise ❤️</p>
+
+</section>
+<div id="surprise" class="surprise" style="display:none;">
+
+    <h2>🎉 Surprise! 🎉</h2>
+
+    <p>
+        Wishing you a birthday filled with happiness, success and beautiful memories.
+    </p>
+
+    <button onclick="showGallery()">
+        View Memories ❤️
+    </button>
+
+</div>
+
+<div id="gallery" class="gallery" style="display:none;">
+
+    <h2 class="memory-title">📸 Beautiful Memories</h2>
+
+    <p class="memory-subtitle">
+        Every picture holds a beautiful story ❤️
+    </p>
+
+    <img id="slider" src="image/photo11.jpeg" alt="Memory">
+    <div class="controls">
+    <button onclick="prevPhoto()">⬅ Prev</button>
+    <button onclick="nextPhoto()">Next ➡</button>
+</div>
+
+</div>
+
+     <div id="videoSection" style="display:none;">
+
+    <h2>🐶 Funny Memory 🐶</h2>
+
+    <video width="500" controls>
+        <source src="video/Birthday.mp4" type="video/mp4">
+    </video>
+
+    <br><br>
+
+    <button onclick="showLetter()">
+    💌 Read My Special Letter ❤️
+</button>
+</div>
+  <div id="letterSection" style="display:none;">
+
+    <h2>💖 A Letter For You 💖</h2>
+
+    <p>
+        Thank you for always being there. Every memory with you is priceless.
+        May your life be filled with happiness, success, and endless smiles.
+        Happy Birthday! ❤️🎂
+    </p>
+  </div>
+
+<section class="thanks" id="thanksSection" style="display:none;">
+
+    <h2>❤️ Thank You ❤️</h2>
+
+    <p>
+Thank you for every laugh,<br>
+every memory,<br>
+and every moment we shared.<br><br>
+
+May all your dreams come true. ❤️<br><br>
+
+Happy Birthday 🎂✨
+</p>
+    <h3>Happy Birthday 🎂</h3>
+
+<button onclick="window.scrollTo({
+top:0,
+behavior:'smooth'
+})">
+⬆ Back to Top
+</button>
+
+</section>
+
+<audio id="music" loop>
+    <source src="music/birthdayy.mp3" type="audio/mpeg">
+</audio>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.4/dist/confetti.browser.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
